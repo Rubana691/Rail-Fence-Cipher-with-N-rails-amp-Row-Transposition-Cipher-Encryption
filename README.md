@@ -13,21 +13,21 @@ oConvert to lowercase (optional, for consistency).
 oCreate a list of empty strings/lists equal to the number of rails.
 4.Zigzag Logic:
 oInitialize:
-rail_index = 0 (starting from top rail).
-direction = 1 (downward).
+rail_index = 0 (starting from top rail).
+direction = 1 (downward).
 oFor each character in message:
-Append character to the current rail.
-Update rail index:
-If at top (rail 0), set direction to down (1).
-If at bottom (rail N-1), set direction to up (-1).
-Move to next rail: rail_index += direction.
+Append character to the current rail.
+Update rail index:
+If at top (rail 0), set direction to down (1).
+If at bottom (rail N-1), set direction to up (-1).
+Move to next rail: rail_index += direction.
 5.Encryption:
 oConcatenate all rails from top to bottom.
 oFinal encrypted text = rail_1 + rail_2 + ... + rail_N.
 6.Output:
-oShow each rail content.
-oShow encrypted message.
-oOptionally: for ch in rail1 + rail2 + ...: print(ch, end="").
+Show each rail content.
+Show encrypted message.
+Optionally: for ch in rail1 + rail2 + ...: print(ch, end="").
 
 
 WORKING VIDEO:
